@@ -12,26 +12,15 @@ The main modules include:
 
 This repository contains the source code for training and evaluating the DPCA-CD-UDA model.
 
-## Requirements
-
-To run the code, the following dependencies are required:
-
-- **Python 3.x**
-- **CUDA** (for GPU acceleration)
-- **TensorFlow** or **PyTorch** (depending on the framework used in the code, adjust accordingly)
-- **Other Python packages** listed in the `requirements.txt` file (can be auto-generated from your environment)
-
 ### Hardware Requirements:
 - **GPU**: NVIDIA 3090 (24GB VRAM)
-- **CPU**: Modern multi-core processor
-- **Memory**: At least 16GB RAM for training on large datasets
 
 ### Training the Model
 
 The code can be run via the provided training script. To train the model, use the following command:
 
 ```bash
-python DAtrain-main.py --source_path <path_to_source_dataset> --target_path <path_to_target_dataset> --epochs <num_epochs>
+python DAtrain-main.py 
 ``` 
 - **source_path**: Path to the source domain dataset.
 - **target_path**: Path to the target domain dataset (unlabeled).
